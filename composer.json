@@ -1,0 +1,25 @@
+{
+    "name": "rs/laravel-builder",
+    "description": "Setup laravel for use with Builder.",
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/console": "^8.0",
+        "illuminate/filesystem": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RS\\Builder\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RS\\Builder\\BuilderServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
